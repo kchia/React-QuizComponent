@@ -1,15 +1,15 @@
 import React, { Component } from "react";
 
 class QuizEnd extends Component {
-  handleResetClick() {
+  handleResetClick = () => {
     this.props.resetClickHandler();
-  }
+  };
 
   render() {
     return (
       <div>
         <p>Thanks for playing!</p>
-        <a onClick={this.handleResetClick.bind(this)} href="">
+        <a onClick={this.handleResetClick} href="">
           Reset Quiz
         </a>
       </div>
